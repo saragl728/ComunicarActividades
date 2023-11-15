@@ -22,5 +22,11 @@ class MainActivity : AppCompatActivity() {
             //se accede a la otra pantalla
             startActivity(intent)
         }
+
+        //se recoge la información enviada de pantalla2
+        val extras = intent.extras
+        val s = extras?.getString("dato")?: "Error"
+
+        binding.info.text = s
     }
 }
