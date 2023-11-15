@@ -33,7 +33,7 @@
         android:id="@+id/info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sin resultado"
+        android:text=""
         android:textColor="#808080"
         app:layout_constraintTop_toBottomOf="@id/botonAcceder"
         app:layout_constraintLeft_toLeftOf="parent"
