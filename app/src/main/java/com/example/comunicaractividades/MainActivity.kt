@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             var nombre = binding.nombre.text.toString()
             //se crea el intent para comunicar con Pantalla2
             var intent = Intent(this, Pantalla2::class.java)
-            intent.putExtra("Dato", nombre)
+            intent.putExtra("dato", nombre)
 
             //se accede a la otra pantalla
             startActivity(intent)
