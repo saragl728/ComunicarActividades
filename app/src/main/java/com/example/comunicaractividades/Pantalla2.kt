@@ -12,6 +12,9 @@ class Pantalla2 : AppCompatActivity() {
         val binding = ActivityPantalla2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val extras = intent.extras
 
+        val s = extras?.getString("dato")?: "sin nombre"
+        binding.textoBienvenida.text = "Bienvenido/a, $s, ¿acepta los términos?"
     }
 }
